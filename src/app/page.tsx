@@ -1,7 +1,11 @@
+'use client'
+
+import { Cards } from '@/components/Cards'
+
 export default function Home() {
   return (
     <main>
-      <h1>Home</h1>
+      <Cards />
     </main>
   )
 }
