@@ -1,12 +1,16 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import '../css/globals.css'
+
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Get Movies',
   description: 'Get Movies'
 }
+
+// aqui é onde eu posso colocar um context por exemplo
 
 export default function RootLayout({
   children
@@ -15,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="icon" href="icon.png" type="image" />{' '}
+      </head>
+      <body className={montserrat.className}>{children}</body>
     </html>
   )
 }

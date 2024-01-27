@@ -1,11 +1,7 @@
 'use client'
 
-import { Cards } from '@/components/Cards'
+import HomePage from '@/modules/homePage/pages/page'
 
 export default function Home() {
-  return (
-    <main>
-      <Cards />
-    </main>
-  )
+  return <HomePage />
 }

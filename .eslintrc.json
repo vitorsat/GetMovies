@@ -18,7 +18,9 @@
         "public",
         "src/types",
         "tsconfig.json",
-        "next.config.mjs"
+        "next.config.mjs",
+        "tailwind.config.js", 
+        "postcss.config.js"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply box-border;
+    @apply overflow-x-hidden;
+  }
+
+  html, body, a {
+    @apply m-0;
+    @apply p-0;
+    @apply bg-[#111211];
+    @apply text-[#ffffff];
+  }
+
+  a {
+    @apply w-fit;
+    @apply h-fit;
+    @apply block;
+    @apply p-2;
+    @apply rounded-md;
+
+    @apply hover:text-[#000000];
+    @apply hover:bg-[#d8dde6];
+    @apply transition ease-in-out 
+  }
+
+  h1 {
+    @apply text-xl
+  }
+}
+
+
+/* depois eu vejo
+/* Firefox */
+ * {
+   scrollbar-width: thin; 
+   scrollbar-color: var(--secondary) var(--primary);
+ }
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
