@@ -28,6 +28,7 @@ export default function HomePage() {
               key={item.id}
               title={item.title}
               imageUrl={pathUrl + item.poster_path}
+              desc={item.release_date}
               width={300}
               heigt={400}
             />

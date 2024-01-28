@@ -17,8 +17,8 @@ export const Card = ({
         width={width}
         height={heigt}
       />
-      <h1 className="text-center mb-2">{title}</h1>
-      <p>{desc}</p>
+      <h1 className="text-start mb-2 p-2">{title}</h1>
+      <p className="text-start mb-2 p-2">{desc}</p>
     </div>
   )
 }
