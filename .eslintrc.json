@@ -8,7 +8,8 @@
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "plugin:storybook/recommended"
     ],
     "ignorePatterns": [
         ".eslintrc.js",
@@ -19,7 +20,7 @@
         "src/types",
         "tsconfig.json",
         "next.config.mjs",
-        "tailwind.config.js", 
+        "tailwind.config.js",
         "postcss.config.js"
     ],
     "parserOptions": {

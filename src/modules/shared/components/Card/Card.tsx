@@ -21,9 +21,7 @@ export const Card = ({
       <h1 className="text-start pt-2 pl-1 pb-2 text-white group-hover:text-black">
         {title}
       </h1>
-      <p className="text-start mb-1 pl-1 text-[#b8b9ba] group-hover:text-black">
-        {desc}
-      </p>
+      <p className="text-start mb-1 pl-1 text-[#b8b9ba] group-hover:text-black">{desc}</p>
     </div>
   )
 }
