@@ -1,3 +1,4 @@
+import { Button } from '@/modules/shared/components/Button/Button'
 import Link from 'next/link'
 
 interface MoviePageProps {
@@ -11,7 +12,9 @@ export default function MoviePage({ id }: MoviePageProps) {
     <main>
       <h1>oii</h1>
       <p>{id}</p>
-      <Link href={'/'}>voltar</Link>
+      <Link href={'/'}>
+        <Button text="Voltar" />
+      </Link>
     </main>
   )
 }

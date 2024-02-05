@@ -3,6 +3,7 @@ import { useHomePageController } from '../hooks/useHomePageController'
 import Link from 'next/link'
 import { Loader } from '@/modules/shared/components/Loader/Loader'
 import { Error } from '@/modules/shared/components/Error/Error'
+// import Suspense from 'react' tentar implementar
 
 export default function HomePage() {
   const { response, responseError } = useHomePageController()
@@ -18,6 +19,10 @@ export default function HomePage() {
     return <Error message={error.status_message} />
   }
 
+  const formatShowDateYear = new Intl.DateTimeFormat('pt-BR', {
+    year: 'numeric'
+  })
+
   return (
     <div className="w-screen p-2">
       <h1>Destaques</h1>
@@ -28,9 +33,9 @@ export default function HomePage() {
               key={item.id}
               title={item.title}
               imageUrl={pathUrl + item.poster_path}
-              desc={item.release_date}
+              desc={formatShowDateYear.format(new Date(item.release_date))}
               width={300}
-              heigt={400}
+              height={400}
             />
           </Link>
         ))}

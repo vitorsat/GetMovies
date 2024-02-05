@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ErrorIcon } from '../../public/assets/ErrorIcon'
+import { Button } from '@/modules/shared/components/Button/Button'
 
 export default function NotFound() {
   return (
@@ -8,7 +9,9 @@ export default function NotFound() {
         <ErrorIcon />
         <h1>Não conseguimos achar essa pagina</h1>
 
-        <Link href="/">Voltar para o inicio</Link>
+        <Link href="/">
+          <Button text="Volta ao inicio" />
+        </Link>
       </div>
     </div>
   )

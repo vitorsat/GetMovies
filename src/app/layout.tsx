@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="icon.png" type="image" />{' '}
+        <link rel="icon" type="image" />
       </head>
       <body className={montserrat.className}>{children}</body>
     </html>

@@ -3,5 +3,5 @@ export interface CardPros {
   imageUrl: string
   desc: string
   width?: number
-  heigt?: number
+  height?: number
 }

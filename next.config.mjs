@@ -13,7 +13,7 @@ const nextConfig = {
         pathname: '/t/p/w500/**'
       }
     ] 
-  },
+  }
 };
 
 export default nextConfig;
