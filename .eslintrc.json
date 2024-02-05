@@ -9,7 +9,9 @@
         "plugin:react-hooks/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended",
-        "plugin:storybook/recommended"
+        "plugin:storybook/recommended",
+        "next",
+        "next/core-web-vitals"
     ],
     "ignorePatterns": [
         ".eslintrc.js",
@@ -30,6 +32,11 @@
     "plugins": [
         "react"
     ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "rules": {
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
