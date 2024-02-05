@@ -11,8 +11,8 @@
   html, body {
     @apply m-0;
     @apply p-0;
-    @apply bg-[#111211];
-    @apply text-[#ffffff];
+    @apply bg-primary;
+    @apply text-white-0;
   }
 
   a {
@@ -29,13 +29,13 @@
 
 /* depois eu vejo
 /* Firefox */
- * {
+ /* * {
    scrollbar-width: thin; 
    scrollbar-color: var(--secondary) var(--primary);
  }
 
 /* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
   width: 15px;
 }
 
@@ -48,4 +48,4 @@
   background-color: var(--secondary);
   border-radius: 14px;
   border: 3px solid var(--primary);
-}
+} */ 

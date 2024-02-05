@@ -9,7 +9,7 @@ export const Card = ({
   height = 400
 }: CardPros) => {
   return (
-    <div className="group w-max h-max p-2 rounded-md hover:bg-[#d8dde6] transition ease-in-out">
+    <div className="group w-max h-max p-2 rounded-md hover:bg-white-50 transition ease-in-out">
       <Image
         priority
         className="rounded-md w-auto h-auto"
@@ -18,10 +18,10 @@ export const Card = ({
         width={width}
         height={height}
       />
-      <h1 className="text-start pt-2 pl-1 pb-2 text-white group-hover:text-black">
+      <h1 className="text-start pt-2 pl-1 pb-2 text-white group-hover:text-primary">
         {title}
       </h1>
-      <p className="text-start mb-1 pl-1 text-[#b8b9ba] group-hover:text-black">{desc}</p>
+      <p className="text-start mb-1 pl-1 text-white-100 group-hover:text-primary">{desc}</p>
     </div>
   )
 }
