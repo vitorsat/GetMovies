@@ -13,7 +13,25 @@ const nextConfig = {
         pathname: '/t/p/w500/**'
       }
     ] 
-  }
+  },
+  async headers() {
+    return [
+      {
+        source: '/api/:path*',
+        headers: [
+          { key: 'Authorization', value: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}` }
+        ],
+      },
+    ];
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: `${process.env.NEXT_PUBLIC_API_URL}/:path*`,
+      }
+    ]
+  },
 };
 
 export default nextConfig;
