@@ -3,14 +3,14 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Error } from './Error'
 
 const meta: Meta<typeof Error> = {
-  component: Error,
+  component: Error
 }
 
-export default meta;
+export default meta
 type Story = StoryObj<typeof Error>
 
 export const Primary: Story = {
   args: {
     message: 'Erro ao buscar'
-  },
+  }
 }
