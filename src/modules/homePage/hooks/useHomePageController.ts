@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Request } from '../services/request'
 import { type AxiosError, type AxiosResponse } from 'axios'
 import { type HomePageProps } from '../types/homePageType'
 import { type HomePageErrorType } from '../types/homePageErrorType'
+import { Request } from '../services/request'
 
 export const useHomePageController = () => {
   const [response, setResponse] = useState<AxiosResponse<HomePageProps>>()

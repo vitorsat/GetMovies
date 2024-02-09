@@ -27,7 +27,7 @@ export default function HomePage() {
     <div className="w-screen p-2">
       <h1>Destaques</h1>
       <div className="w-full flex-row flex gap-10 flex-wrap align-top justify-center">
-        {data?.results.map((item) => (
+        {data?.results?.map((item) => (
           <Link key={item.id} href={`movie/${item.id}`}>
             <Card
               key={item.id}

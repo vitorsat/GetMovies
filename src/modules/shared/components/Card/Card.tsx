@@ -11,7 +11,6 @@ export const Card = ({
   return (
     <div className="group w-max h-max p-2 rounded-md hover:bg-white-50 transition ease-in-out">
       <Image
-        priority
         className="rounded-md w-auto h-auto"
         src={imageUrl}
         alt={title}

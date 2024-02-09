@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.js", "postcss.config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.js", "postcss.config.js", "src/modules/shared/components/Card/Card.test.ts", "src/app/api/proxy/[path]/request.js"],
   "exclude": ["node_modules"]
 }
