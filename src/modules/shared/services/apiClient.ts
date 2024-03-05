@@ -1,10 +1,8 @@
 import axios from 'axios'
 
 export const apiClient = axios.create({
-  baseURL: '/api'
-})
-
-apiClient.interceptors.request.use((request) => {
-  console.log('Starting Request', request)
-  return request
+  baseURL: '/api',
+  headers: {
+    Authorization: 'Bearer ' + process.env.NEXT_PUBLIC_API_KEY
+  }
 })
