@@ -3,13 +3,13 @@ import { useHomePageController } from '../hooks/useHomePageController'
 import Link from 'next/link'
 import { Loader } from '@/modules/shared/components/Loader/Loader'
 import { Error } from '@/modules/shared/components/Error/Error'
+import { PATH_URL } from '@/modules/shared/Contants/globalConsts'
 // import Suspense from 'react' tentar implementar
 
 export default function HomePage() {
   const { response, responseError } = useHomePageController()
   const data = response?.data
   const error = responseError?.response?.data
-  const pathUrl = 'https://image.tmdb.org/t/p/w500'
 
   if (!data && !error) {
     return <Loader />
@@ -32,7 +32,7 @@ export default function HomePage() {
             <Card
               key={item.id}
               title={item.title}
-              imageUrl={pathUrl + item.poster_path}
+              imageUrl={PATH_URL + item.poster_path}
               desc={formatShowDateYear.format(new Date(item.release_date))}
               width={300}
               height={400}
