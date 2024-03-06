@@ -28,6 +28,7 @@ export default function MoviePage({ id }: MoviePageProps) {
       <main>
         <h1>{data?.original_title}</h1>
         <p>{data?.status}</p>
+        <p>teste</p>
         <Image
           src={PATH_URL + data.backdrop_path}
           alt={data.original_title}
