@@ -37,6 +37,7 @@ export default function ListMoviesPage() {
               desc={formatShowDateYear.format(new Date(item.release_date))}
               width={200}
               height={300}
+              containerWidth={'200px'}
             />
           </Link>
         ))}
