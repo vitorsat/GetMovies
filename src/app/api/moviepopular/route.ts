@@ -15,7 +15,9 @@ export async function GET(req: Request, res: Response) {
     if (apiResponse.status === 200) {
       return NextResponse.json(apiResponse.data, { status: 200 })
     }
-  } catch (error) {
-    return NextResponse.json(error, { status: 500 })
+  } catch (error: any) {
+    return NextResponse.json(error.response.data, {
+      status: error.response.status
+    })
   }
 }
