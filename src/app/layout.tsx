@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 
 import '../css/globals.css'
+import { Header } from '@/modules/shared/components/Header/Header'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -22,7 +23,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image" />
       </head>
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }

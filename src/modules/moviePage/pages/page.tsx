@@ -1,10 +1,10 @@
 import { Button } from '@/modules/shared/components/Button/Button'
-import Link from 'next/link'
 import { useMoviePageController } from '../hooks/useMoviePageController'
 import Image from 'next/image'
 import { PATH_URL } from '@/modules/shared/Contants/globalConsts'
 import { Loader } from '@/modules/shared/components/Loader/Loader'
 import { Error } from '@/modules/shared/components/Error/Error'
+import { returnToPreviusPath } from '@/modules/shared/utils/backToPreviusPath'
 
 interface MoviePageProps {
   id: string
@@ -35,9 +35,7 @@ export default function MoviePage({ id }: MoviePageProps) {
           width={200}
           height={200}
         />
-        <Link href={'/'}>
-          <Button text="Voltar" />
-        </Link>
+        <Button text="Voltar" onClick={returnToPreviusPath} />
       </main>
     )
   )

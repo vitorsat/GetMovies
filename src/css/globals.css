@@ -16,12 +16,6 @@
     @apply text-white-0;
   }
 
-  a {
-    @apply w-fit;
-    @apply h-fit;
-    @apply block;
-  }
-
   h1 {
     @apply text-xl;
   }

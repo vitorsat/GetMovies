@@ -6,16 +6,19 @@ export const Card = ({
   imageUrl,
   desc,
   width = 300,
-  height = 400
+  height = 400,
+  containerWidth = '200px'
 }: CardPros) => {
   return (
-    <div className="group w-max h-max p-2 rounded-md hover:bg-white-50 transition ease-in-out">
+    <div
+      className={`group w-[${containerWidth}] h-max p-2 rounded-md hover:bg-white-50 transition ease-in-out`}
+    >
       <Image
         className="rounded-md w-auto h-auto"
         src={imageUrl}
         alt={title}
-        width={width ?? 'auto'}
-        height={height ?? 'auto'}
+        width={width}
+        height={height}
         priority={!!imageUrl}
       />
       <h1 className="text-start w-[95%] text-wrap pt-2 pl-1 pb-2 text-white group-hover:text-primary">

@@ -15,6 +15,7 @@ export const Primary: Story = {
     imageUrl: 'https://image.tmdb.org/t/p/w500/zVMyvNowgbsBAL6O6esWfRpAcOb.jpg',
     desc: '2024',
     width: 300,
-    height: 400
+    height: 400,
+    containerWidth: '200px'
   }
 }

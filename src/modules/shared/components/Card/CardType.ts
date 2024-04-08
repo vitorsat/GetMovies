@@ -4,4 +4,5 @@ export interface CardPros {
   desc: string
   width?: number
   height?: number
+  containerWidth?: string
 }

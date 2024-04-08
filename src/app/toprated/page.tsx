@@ -2,6 +2,6 @@
 
 import ListMoviesPage from '@/modules/listMoviesPage/pages/page'
 
-export default function Home() {
+export default function TopRated() {
   return <ListMoviesPage />
 }
